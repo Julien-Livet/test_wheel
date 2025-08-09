@@ -1,9 +1,12 @@
 [build-system]
-requires = ["setuptools", "wheel", "pybind11", "conan"]
-build-backend = "setuptools.build_meta"
+requires = ["scikit-build-core", "setuptools", "wheel"]
+build-backend = "scikit_build_core.build"
 
 [project]
 name = "test_wheel"
 version = "0.1.0"
 description = "Minimal pybind11 + ceres-solver demo with Conan"
 requires-python = ">=3.8"
+
+[tool.scikit-build]
+cmake.verbose = true
