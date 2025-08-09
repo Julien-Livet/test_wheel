@@ -20,6 +20,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          architecture: 'x64'
 
       # Installer cibuildwheel et conan
       - name: Install build tools
