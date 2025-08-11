@@ -41,5 +41,5 @@ jobs:
       # Upload des artefacts
       - uses: actions/upload-artifact@v4
         with:
-          name: wheels
-          path: dist/*
+          name: dist-${{ matrix.os }}
+          path: dist
