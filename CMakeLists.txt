@@ -13,4 +13,4 @@ pybind11_add_module(test_wheel src/main.cpp)
 
 target_link_libraries(test_wheel PRIVATE Ceres::ceres)
 
-
+install(TARGETS test_wheel LIBRARY DESTINATION .)
