@@ -1,5 +1,5 @@
 [build-system]
-requires = ["scikit-build-core", "setuptools", "wheel"]
+requires = ["scikit-build-core", "setuptools", "wheel", "delocate>=0.10.0"]
 build-backend = "scikit_build_core.build"
 
 [project]
@@ -10,3 +10,4 @@ requires-python = ">=3.8"
 
 [tool.scikit-build]
 cmake.verbose = true
+
