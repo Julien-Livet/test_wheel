@@ -27,7 +27,7 @@ jobs:
 
       - name: Build wheels
         run: |
-          cibuildwheel --output-dir dist
+          CIBW_ARCHS_MACOS=x86_64 cibuildwheel --output-dir dist
         env:
           CIBW_BEFORE_BUILD: >
             pip install conan && conan profile detect --force && conan install . --output-folder=build --build=missing &&
